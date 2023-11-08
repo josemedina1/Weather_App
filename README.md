@@ -1,8 +1,19 @@
 # Weather_App
 Sitio web de clima 
 
-Para el desarrollo de este proyecto se utiliza la API "Weather API",
+Para el desarrollo de este proyecto se utiliza la API "Weather API".
+
 **URL necesarias:**
 - https://openweathermap.org/api
 - https://openweathermap.org/api/one-call-3
 
+# Lenguajes utilizados
+HTML, CSS, JavaScript, Bootstrap 5.
+
+# Levantar servicio o pagina
+```
+Para iniciar la pagina web y poder visualizar el contenido necesitamos la extencion 
+"Go Live" para simular un host de forma local mediante Visual Studio Code.
+```
+
+<img src="src/img/Go Live.gif" alt="">

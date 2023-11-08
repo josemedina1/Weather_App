@@ -1,0 +1,19 @@
+.titulo{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.container{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.vista_clima{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
