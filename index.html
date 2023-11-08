@@ -28,16 +28,16 @@
         </div>
 
 <!-- Seccion del formulario de busqueda -->
-        <form action="">
+        <form action="" method="POST" class="form-weather">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Ciudad</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="text" id="city" name="city" class="form-control city" aria-describedby="emailHelp">
             </div>
 
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Pais</label>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
+                <select name="" id="country" class="form-select country" aria-label="Default select example" >
+                    <option disabled selected value="">Selecciona el Pais</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
@@ -54,6 +54,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
