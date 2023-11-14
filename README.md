@@ -5,15 +5,18 @@ Para el desarrollo de este proyecto se utiliza la API "Weather API".
 
 **URL necesarias:**
 - https://openweathermap.org/api
-- https://openweathermap.org/api/one-call-3
+- https://openweathermap.org/current
 
 # Lenguajes utilizados
 HTML, CSS, JavaScript, Bootstrap 5.
 
 # Levantar servicio o pagina
 ```
-Para iniciar la pagina web y poder visualizar el contenido necesitamos la extencion 
-"Go Live" para simular un host de forma local mediante Visual Studio Code.
+Para iniciar la pagina web y poder visualizar el contenido necesitamos la extencion
+"Live Server", una vez descargada esta extención se mostrará en la parte inferior derecha 
+un boton / sección llamado "Go Live" para simular un host de forma local mediante Visual Studio Code.
 ```
+
+<img src="src/img/extension_live.png" alt="">
 
 <img src="src/img/Go Live.gif" alt="">
