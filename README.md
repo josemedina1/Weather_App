@@ -5,7 +5,10 @@ Para el desarrollo de este proyecto se utiliza la API "Weather API".
 
 **URL necesarias:**
 - https://openweathermap.org/api
+**API a consumir**
 - https://openweathermap.org/current
+**Iconos**
+- https://openweathermap.org/weather-conditions
 
 # Lenguajes utilizados
 HTML, CSS, JavaScript, Bootstrap 5.
