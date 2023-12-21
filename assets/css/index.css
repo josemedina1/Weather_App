@@ -1,6 +1,8 @@
 .titulo{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 5px;
     margin: 5px;
 }
@@ -10,16 +12,15 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid red;
 }
 
 .vista_clima{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 30vh;
     border: 2px solid green;
-
 }
 
 .container-fluid{
@@ -27,6 +28,7 @@
     display: flex;
     justify-content: center;
 }
+
 
 /* Footer*/
 footer {

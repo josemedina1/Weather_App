@@ -78,11 +78,16 @@ function callAPI(city, country) {
 
         // crear div de contenido
         const content = `
-        <img src="https://openweathermap.org/img/wn/${arr.icon}@2x.png" alt="">
-        <h3>Clima en ${name}</h3>
-        <h4>Temperatura actual: ${tempcelsius}</h4>
-        <h5>Temperatura minima: ${temp_min}</h5>
-        <h5>Temperatura maxima: ${temp_max}</h5>
+        
+            <img src="https://openweathermap.org/img/wn/${arr.icon}@2x.png" alt="">
+            <h3>Clima en ${name}</h3>
+            <p>Temperatura actual: ${tempcelsius}</p>
+            
+            <div class="">
+                <small>Temperatura minima: ${minselsius} / </small>
+                <small>Temperatura maxima: ${maxcelsius}</small>
+            </div>
+        
         `        
 
         console.log('Nombre: ',name)
