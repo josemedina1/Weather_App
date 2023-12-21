@@ -14,6 +14,8 @@ form.addEventListener('submit', (e) => {
     //Prevenir refrescar la pagina del formulario al dar click en el boton
     e.preventDefault();
 
+
+
     if (nameCity.value === '' || nameCountry.value === '') {
         alertNull.innerHTML = `<div class="alert alert-danger" role="alert">
         Ambos campos son obligatorios!
@@ -52,7 +54,7 @@ function callAPI(city, country) {
     fetch(url)
         .then(response => response.json())
         .then(response => {
-        // Error de busqueda 404
+            // Error de busqueda 404
             if (response.cod === '404') {
                 console.log('Error de búsqueda');
                 alertNull.innerHTML = `<div class="alert alert-danger" role="alert">
@@ -66,11 +68,11 @@ function callAPI(city, country) {
         })
         .catch(err => console.error(err));
 
-    function showWeather(data){
+    function showWeather(data) {
         //Destructuración de los datos dentro del obtejo
         //main contiene atributos 
         // El atributo weather contiene un arreglo, otro objeto dentro
-        const {name, main:{temp, temp_min, temp_max}, weather:[arr]} = data;
+        const { name, main: { temp, temp_min, temp_max }, weather: [arr] } = data;
 
         const tempcelsius = gradosCelsius(temp);
         const maxcelsius = gradosCelsius(temp_max);
@@ -88,21 +90,44 @@ function callAPI(city, country) {
                 <small>Temperatura maxima: ${maxcelsius}</small>
             </div>
         
-        `        
+        `
 
-        console.log('Nombre: ',name)
-        console.log('Temperatura actual: ',temp)
-        console.log('Temp minima: ',minselsius)
-        console.log('Temp maxima: ',maxcelsius)
-        console.log('Icono: ',arr.icon)
+        console.log('Nombre: ', name);
+        console.log('Temperatura actual: ', temp);
+        console.log('Temp minima: ', minselsius);
+        console.log('Temp maxima: ', maxcelsius);
+        console.log('Icono: ', arr.icon);
 
-        result.innerHTML ='';
+        const inento = `<div class="containertiempo">
+        <div class="cloud front">
+          <span class="left-front"></span>
+          <span class="right-front"></span>
+        </div>
+        <span class="sun sunshine"></span>
+        <span class="sun"></span>
+        <div class="cloud back">
+          <span class="left-back"></span>
+          <span class="right-back"></span>
+        </div>
+      </div>`;
 
-        result.innerHTML = content;
+        result.innerHTML = inento;
+
+        // Ocultar la variable después de 3 segundos
+        setTimeout(function () {
+            // Definir la variable como null o un valor vacío para "ocultarla"
+            result.innerHTML = content;
+
+            // Mostrar la variable después de "ocultarla" (esto solo se imprimirá en la consola)
+            console.log(inento);
+        }, 3000); // 3000 milisegundos (3 segundos)
+
+
+
     }
 
 }
 // los grados se muestran en kelvin, con esta funcion se transforman en celsius
-function gradosCelsius(temp_){
+function gradosCelsius(temp_) {
     return parseInt(temp_ - 273.15)
 }
