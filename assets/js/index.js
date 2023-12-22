@@ -17,9 +17,34 @@ form.addEventListener('submit', (e) => {
 
 
     if (nameCity.value === '' || nameCountry.value === '') {
-        alertNull.innerHTML = `<div class="alert alert-danger" role="alert">
-        Ambos campos son obligatorios!
-        </div>`;
+        result.innerHTML = `<div class="loader">
+        <div class="snow">
+            <span style="--i:11"></span>
+            <span style="--i:12"></span>
+            <span style="--i:15"></span>
+            <span style="--i:17"></span>
+            <span style="--i:18"></span>
+            <span style="--i:13"></span>
+            <span style="--i:14"></span>
+            <span style="--i:19"></span>
+            <span style="--i:20"></span>
+            <span style="--i:10"></span>
+            <span style="--i:18"></span>
+            <span style="--i:13"></span>
+            <span style="--i:14"></span>
+            <span style="--i:19"></span>
+            <span style="--i:20"></span>
+            <span style="--i:10"></span>
+            <span style="--i:18"></span>
+            <span style="--i:13"></span>
+            <span style="--i:14"></span>
+            <span style="--i:19"></span>
+            <span style="--i:20"></span>
+            <span style="--i:10"></span>
+        </div>
+    </div>
+    <br><br><br><br>
+      <div>Ambos campos son obligatorios!</div>`;
         return;
     }
 
@@ -60,6 +85,16 @@ function callAPI(city, country) {
                 alertNull.innerHTML = `<div class="alert alert-danger" role="alert">
                                             Ciudad o Pais incorrecto!
                                         </div>`;
+
+                const animacionError = `<div class="loaderError"></div>
+                <br><br><br>
+              <div class="alertaErrorbusqueda">
+                Ciudad o Pais incorrecto!
+            </div>
+              `;
+
+              result.innerHTML = animacionError;
+
             } else {
                 console.log(response);
                 // Llamado de la funcion ShowWeather
@@ -84,7 +119,6 @@ function callAPI(city, country) {
             <img src="https://openweathermap.org/img/wn/${arr.icon}@2x.png" alt="">
             <h3>Clima en ${name}</h3>
             <p>Temperatura actual: ${tempcelsius}</p>
-            
             <div class="">
                 <small>Temperatura minima: ${minselsius} / </small>
                 <small>Temperatura maxima: ${maxcelsius}</small>
@@ -98,20 +132,21 @@ function callAPI(city, country) {
         console.log('Temp maxima: ', maxcelsius);
         console.log('Icono: ', arr.icon);
 
-        const inento = `<div class="containertiempo">
-        <div class="cloud front">
-          <span class="left-front"></span>
-          <span class="right-front"></span>
-        </div>
-        <span class="sun sunshine"></span>
-        <span class="sun"></span>
-        <div class="cloud back">
-          <span class="left-back"></span>
-          <span class="right-back"></span>
-        </div>
-      </div>`;
+        const animacion = `<div class="sun">
+        <div class="center"></div>
+        <div class="ray r-1"></div>
+        <div class="ray r-2"></div>
+        <div class="ray r-3"></div>
+        <div class="ray r-4"></div>
+        <div class="ray r-5"></div>
+        <div class="ray r-6"></div>
+        <div class="ray r-7"></div>
+        <div class="ray r-8"></div>
+      </div>
+      <br><br>
+      <div>Buscando...</div>`;
 
-        result.innerHTML = inento;
+        result.innerHTML = animacion;
 
         // Ocultar la variable después de 3 segundos
         setTimeout(function () {
@@ -119,7 +154,7 @@ function callAPI(city, country) {
             result.innerHTML = content;
 
             // Mostrar la variable después de "ocultarla" (esto solo se imprimirá en la consola)
-            console.log(inento);
+            console.log(animacion);
         }, 3000); // 3000 milisegundos (3 segundos)
 
 

@@ -4,81 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* Estilos CSS para la animación de carga */
-        #loader {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.8);
-            z-index: 9999;
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #87CEEB; /* Color de fondo del cielo */
         }
 
-        .loader-content {
+        .leaf {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
+            width: 30px;
+            height: 40px;
+            background-color: #4CAF50; /* Color de las hojas */
+            clip-path: polygon(50% 0%, 100% 25%, 75% 50%, 100% 75%, 50% 100%, 0% 75%, 25% 50%, 0% 25%);
+            animation: caidaHoja 6s linear infinite;
+            opacity: 0; /* Inicialmente invisible */
         }
 
-        .spinner {
-            border: 8px solid rgba(0, 0, 0, 0.3);
-            border-top: 8px solid #3498db;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            animation: spin 1s linear infinite;
+        /* Animación más suave y variación en la dirección del viento */
+        @keyframes caidaHoja {
+            0% {
+                transform: translate(0, -50vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            100% {
+                transform: translate(calc(100vw - 30px), 100vh) rotate(1440deg);
+                opacity: 0;
+            }
         }
 
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
+        /* Crear varias hojas */
+        .leaf:nth-child(1) { left: 10%; animation-delay: 1s; }
+        .leaf:nth-child(2) { left: 30%; animation-delay: 2s; }
+        .leaf:nth-child(3) { left: 50%; animation-delay: 3s; }
+        .leaf:nth-child(4) { left: 70%; animation-delay: 4s; }
+        .leaf:nth-child(5) { left: 90%; animation-delay: 5s; }
     </style>
 </head>
 <body>
 
-    <!-- Botón para activar la animación -->
-    <button onclick="mostrarAnimacion()">Mostrar Animación</button>
-
-    <!-- Div vacío para insertar la animación -->
-    <div id="vista_clima"></div>
-
-    
-    <script>
-        // Función para mostrar y luego ocultar la animación
-        function mostrarAnimacion() {
-            // Crear el div de animación
-            var loaderDiv = document.createElement('div');
-            loaderDiv.id = 'loader';
-
-            // Contenido de la animación
-            loaderDiv.innerHTML = `
-                <div class="loader-content">
-                    <div class="spinner"></div>
-                    <p>Cargando...</p>
-                </div>
-            `;
-
-            // Insertar el div de animación en el div vacío
-            document.getElementById('vista_clima').appendChild(loaderDiv);
-
-            // Mostrar animación
-            loaderDiv.style.display = 'block';
-
-            // Ocultar animación después de 3 segundos
-            setTimeout(function() {
-                loaderDiv.style.opacity = '0';
-                setTimeout(function() {
-                    loaderDiv.style.display = 'none';
-                    loaderDiv.style.opacity = '1';
-                }, 500); // 500 milisegundos para que la opacidad vuelva a 1 suavemente
-            }, 3000); // 3000 milisegundos (3 segundos)
-        }
-    </script>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
 
 </body>
 </html>

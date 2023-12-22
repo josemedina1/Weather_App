@@ -23,3 +23,16 @@ un boton / sección llamado "Go Live" para simular un host de forma local median
 <img src="src/img/extension_live.png" alt="">
 
 <img src="src/img/Go Live.gif" alt="">
+
+
+# Animaciones utilizadas
+
+**Busqueda de clima**
+```
+https://uiverse.io/zanina-yassine/weak-bobcat-68
+```
+
+**Error de busqueda**
+```
+https://uiverse.io/doniaskima/fresh-panther-60
+```
