@@ -2,16 +2,49 @@
 Sitio web de clima 
 
 Para el desarrollo de este proyecto se utiliza la API "Weather API".
+```
+https://openweathermap.org/api
+```
 
-**URL necesarias:**
-- https://openweathermap.org/api
-**API a consumir**
-- https://openweathermap.org/current
-**Iconos**
-- https://openweathermap.org/weather-conditions
+<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
 
 # Lenguajes utilizados
-HTML, CSS, JavaScript, Bootstrap 5.
+
+<div>
+    <img src="https://img.shields.io/badge/JavasCript-FFDB58" alt="JavasCript"/>
+    <img src="https://img.shields.io/badge/HTML-FF5733" alt="HTML"/>
+    <img src="https://img.shields.io/badge/CSS-23BFF5" alt="CSS"/>
+    <img src="https://img.shields.io/badge/Bootstrap-581845" alt="Bootstrap"/>
+</div>
+
+<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
+
+# URL necesarias:
+
+**API a consumir**
+```
+ https://openweathermap.org/api
+```
+```
+https://openweathermap.org/current
+```
+
+**Iconos**
+```
+https://openweathermap.org/weather-conditions
+```
+
+**Animacion busqueda de clima**
+```
+https://uiverse.io/zanina-yassine/weak-bobcat-68
+```
+
+**Animacion error de busqueda**
+```
+https://uiverse.io/doniaskima/fresh-panther-60
+```
+
+<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
 
 # Levantar servicio o pagina
 ```
@@ -24,15 +57,5 @@ un boton / sección llamado "Go Live" para simular un host de forma local median
 
 <img src="src/img/Go Live.gif" alt="">
 
+<img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
 
-# Animaciones utilizadas
-
-**Busqueda de clima**
-```
-https://uiverse.io/zanina-yassine/weak-bobcat-68
-```
-
-**Error de busqueda**
-```
-https://uiverse.io/doniaskima/fresh-panther-60
-```
