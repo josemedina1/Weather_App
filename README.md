@@ -6,7 +6,7 @@ Para el desarrollo de este proyecto se utiliza la API "Weather API".
 https://openweathermap.org/api
 ```
 
-<img width="15%" src="src/img/aplicacionClima.gif" alt="JavasCript"/>
+<img height="10%" src="src/img/aplicacionClima.gif" alt="JavasCript"/>
 
 
 <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
