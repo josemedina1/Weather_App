@@ -6,6 +6,9 @@ Para el desarrollo de este proyecto se utiliza la API "Weather API".
 https://openweathermap.org/api
 ```
 
+<img width="15%" src="src/img/aplicacionClima.gif" alt="JavasCript"/>
+
+
 <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
 
 # Lenguajes utilizados
@@ -47,15 +50,15 @@ https://uiverse.io/doniaskima/fresh-panther-60
 <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
 
 # Levantar servicio o pagina
-```
+
 Para iniciar la pagina web y poder visualizar el contenido necesitamos la extencion
-"Live Server", una vez descargada esta extención se mostrará en la parte inferior derecha 
-un boton / sección llamado "Go Live" para simular un host de forma local mediante Visual Studio Code.
-```
+**"Live Server"**, una vez descargada esta extención se mostrará en la parte inferior derecha 
+un boton / sección llamado **"Go Live"** para simular un host de forma local mediante Visual Studio Code.
 
-<img src="src/img/extension_live.png" alt="">
 
-<img src="src/img/Go Live.gif" alt="">
+<img src="src/img/extension_live.png" alt="Extension_GoLive">
+
+<img src="src/img/ServidorAplicacion.gif" alt="Correr_Servidor_GoLive">
 
 <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="1920" />
 
