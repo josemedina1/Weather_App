@@ -26,12 +26,6 @@ body{
     height: 30vh;
 }
 
-.container-fluid{
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-}
-
 
 /* Footer*/
 footer {
